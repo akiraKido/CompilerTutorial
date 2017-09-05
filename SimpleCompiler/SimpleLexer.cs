@@ -24,7 +24,7 @@ namespace SimpleCompiler
 
     internal class SimpleLexer : ILexer
     {
-        private readonly Regex _numbeRegex = new Regex( @"\G[0-9]+(\.[0-9]*)?", RegexOptions.Compiled );
+        private readonly Regex _numbeRegex = new Regex( @"\G[0-9]+(\.[0-9]+)?", RegexOptions.Compiled );
 
         private readonly string _text;
         private int _offset;
